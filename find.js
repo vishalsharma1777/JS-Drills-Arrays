@@ -1,4 +1,4 @@
-const cb = (x) => { 
+const cb = (x,y) => { 
     return (y === x);
 }
 
@@ -7,10 +7,8 @@ function find(elements, cb,x){
         if(cb(elements[i],x)){
          return (elements[i]);
         }
-        else{
-            return undefined;
-        }  
     }
+    return undefined;
 }
 
 export {find,cb}
